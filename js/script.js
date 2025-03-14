@@ -52,7 +52,7 @@ function displayVideo(videos){
         let div = document.createElement('div')
         div.innerHTML = 
         `
-         <div class="card bg-base-100 ">
+         <div class="card bg-base-100 lg:pt-0 pt-5">
          <figure class="relative">
              <img class="w-full h-[150px] object-cover" src="${video.thumbnail}" alt="Shoes" />
              <span class="bottom-2 right-2 p-2 absolute text-white text-sm bg-black rounded-md">3 hrs 56 minutes ago</span>
@@ -81,11 +81,11 @@ function displayVideo(videos){
                <p class="text-sm text-gray-400">${video.title}Views</p> 
            </div>
          </div>
-         <button onclick=loadVideoDetails('${video.video_id}') class="btn btn-block">Show Details</button>
+         <button onclick=loadVideoDetails('${video.video_id}') class="btn btn-block ">Show Details</button>
       </div>
        `;
         videoContainer.appendChild(div)
-    });
+    });   
 }
 
 // For Dinamic Load Video 
